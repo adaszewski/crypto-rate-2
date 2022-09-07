@@ -26,7 +26,7 @@ class Crypto extends Component {
     }
 
     getCryptoData = () => {
-        axios.get('https://blockchain.info/pl/ticker',
+        axios.get('https://blockchain.info/ticker',
             { mode: 'cors' })
             .then(res => {
                 const tickers = res.data;
